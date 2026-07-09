@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <nav className="max-w-5xl mx-auto flex items-center justify-between px-8 py-4 text-black">
+    <nav className="max-w-5xl mx-auto flex items-center justify-between py-4 text-black">
       {/* Logo */}
       <div className="flex items-center gap-3">
         <img

@@ -18,6 +18,14 @@ const initialState : InitialState = {
       isCompleted: false,
       priority: "High",
     },
+    {
+      id: "add",
+      title: "Initialize backend",
+      description: "create about",
+      dueDate: "2026-12",
+      isCompleted: false,
+      priority: "High",
+    },
   ],
   filter: "all",
 }

@@ -1,3 +1,4 @@
+import { AddTaskModal } from "@/components/module/tasks/AddTaskModal";
 import TaskCard from "@/components/module/tasks/TasksCard";
 import { selectTasks } from "@/redux/features/tasks/taskSlice";
 import { useAppSelector } from "@/redux/hook";
@@ -13,12 +14,13 @@ const Tasks = () => {
 
 
     return (
-        <div>
-            <h1>This is Task</h1>
+        <div className="max-w-5xl mx-auto">
+            <h1 className="mt-10 mb-10">Tasks</h1>
+            <AddTaskModal/>
             <div>
                 {
                     tasks.map((task)=> (
-                        <TaskCard key={task.id} />
+                        <TaskCard key={task.id} task={task} />
                     ))
                 }
             </div>
